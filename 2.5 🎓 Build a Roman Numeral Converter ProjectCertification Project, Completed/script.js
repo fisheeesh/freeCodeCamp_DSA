@@ -17,9 +17,10 @@ function convertToRoman(num) {
 
     let result = ''
 
-    //* Goes through each item in the romanNumerals array from largest to smallest value (starting at 1000 → down to 1)
+    //* romanNumerals araray index time ko loop pat ml
     for (let i = 0; i < romanNumerals.length; i++) {
-        //* Repeats as long as the current Roman numeral’s value can still “fit into” the remaining number (num)
+        //* pass lyk tae arg ka romanNumerals array yae youk ny tae index ko gte ta ywae pat ml
+        //* condition mahn tae kg yae numeral to paung htae ml p yin num ko ae kg yae value nae substract
         while (num >= romanNumerals[i].value) {
             result += romanNumerals[i].numeral
             num -= romanNumerals[i].value
