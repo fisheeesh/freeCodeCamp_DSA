@@ -1,0 +1,88 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+/* Glass Card Container */
+.glass-card {
+    width: 340px;
+    padding: 30px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.1);
+}
+
+/* Heading */
+.glass-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+/* Input */
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    outline: none;
+    margin-bottom: 20px;
+    transition: background 0.2s ease-in-out;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+/* Button Row */
+.btn-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 14px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Result Text */
+#results-div {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    min-height: 24px;
+}
