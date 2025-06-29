@@ -17,7 +17,9 @@ function convertToRoman(num) {
 
     let result = ''
 
+    //* Goes through each item in the romanNumerals array from largest to smallest value (starting at 1000 → down to 1)
     for (let i = 0; i < romanNumerals.length; i++) {
+        //* Repeats as long as the current Roman numeral’s value can still “fit into” the remaining number (num)
         while (num >= romanNumerals[i].value) {
             result += romanNumerals[i].numeral
             num -= romanNumerals[i].value
