@@ -10,6 +10,8 @@ function palindromeChekcer() {
         return
     }
 
+    //* Remove all non-alphanumeric characters (punctuation, spaces and symbols) 
+    //* And turn everything into the same case (lower or upper case) in order to check for palindromes.
     const cleaned = input.replace(/[^\da-zA-Z]/, "").toLowerCase()
     const reversed = cleaned.split('').reverse().join("")
 
