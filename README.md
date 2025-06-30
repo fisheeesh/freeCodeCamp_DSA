@@ -1,4 +1,4 @@
-# JavaScript Algorithms and Data Structures Certification (freeCodeCamp)
+## JavaScript Algorithms and Data Structures Certification (freeCodeCamp)
 
 The **freeCodeCamp** JavaScript Data Structures and Algorithms course is a hands-on introduction to real-world coding. You’ll start by learning how to write and organize JavaScript code, mastering essentials like data types, functions, loops, and conditionals.
 
