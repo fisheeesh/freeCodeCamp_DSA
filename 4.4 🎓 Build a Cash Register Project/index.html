@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass Cash Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cash-register">
+            <div class="header">
+                <h1>Cash Register</h1>
+                <div class="brand-logo">💰</div>
+            </div>
+
+            <div id="change-due"></div>
+
+            <div class="display-section">
+                <div class="price-display">
+                    <span class="price-label">Price:</span>
+                    <span id="cost" class="price-value"></span>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <label for="cash" class="input-label">Cash from customer:</label>
+                <input type="number" id="cash" class="cash-input" placeholder="0.00" step="0.01">
+                <button id="purchase-btn" class="purchase-button">
+                    <span>Purchase</span>
+                    <div class="button-glow"></div>
+                </button>
+            </div>
+
+            <div class="drawer-section">
+                <div class="drawer-display">
+                    <div class="drawer-header">Cash in drawer:</div>
+                    <div class="drawer-breakdown" id="drawer-breakdown">
+                        <!-- This will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-drawer">
+                <div class="drawer-handle"></div>
+                <div class="drawer-compartments">
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                    <div class="compartment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
