@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Creature Search - Liquid Glass UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RPG Creature Search</h1>
+            <p>Discover the mystical creatures of the realm</p>
+        </div>
+
+        <div class="search-section">
+            <form class="search-form">
+                <input type="text" id="search-input" placeholder="Enter creature name..." required>
+                <button type="button" id="search-button">Search</button>
+            </form>
+        </div>
+
+        <div class="creature-display">
+            <div id="creature-header">
+                <div class="name-id-row">
+                    <div id="creature-name"></div>
+                    <div id="creature-id"></div>
+                </div>
+
+                <div class="weight-height-row">
+                    <div><span id="weight"></span></div>
+                    <div><span id="height"></span></div>
+                </div>
+
+                <div class="types-section">
+                    <div class="types-container" id="types">
+                    </div>
+                </div>
+
+                <div class="ability-section">
+                    <div class="ability-title"></div>
+                    <div class="ability-description"></div>
+                </div>
+            </div>
+
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Base</th>
+                        <th>Stats</th>
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+                    <tr>
+                        <td class="stat-label">HP:</td>
+                        <td class="stat-value" id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat-label">Attack:</td>
+                        <td class="stat-value" id="attack"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat-label">Defense:</td>
+                        <td class="stat-value" id="defense"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat-label">Sp. Attack:</td>
+                        <td class="stat-value" id="special-attack"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat-label">Sp. Defense:</td>
+                        <td class="stat-value" id="special-defense"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat-label">Speed:</td>
+                        <td class="stat-value" id="speed"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="loading">
+                <p>Searching for creature...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
